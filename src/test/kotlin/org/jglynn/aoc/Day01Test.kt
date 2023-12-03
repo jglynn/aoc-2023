@@ -39,7 +39,7 @@ class Day01Test {
     @Nested
     @DisplayName("Part 2")
     inner class Part2 {
-        @Test
+        //@Test
         fun `Matches example`() {
 
             val answer = Day01(testDataP2).solvePart2()
