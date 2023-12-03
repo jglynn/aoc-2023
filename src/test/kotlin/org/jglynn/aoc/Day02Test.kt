@@ -39,13 +39,13 @@ class Day02Test {
     @Nested
     @DisplayName("Part 2")
     inner class Part2 {
-        //@Test
+        @Test
         fun `Matches example`() {
 
             val answer = Day02(testData).solvePart2()
 
             // Assert
-            assertThat(answer).isEqualTo(5)
+            assertThat(answer).isEqualTo(2286)
         }
 
         @Test
@@ -54,6 +54,9 @@ class Day02Test {
             val answer = Day02(realData).solvePart2()
 
             println("Answer = $answer")
+
+            // Assert
+            assertThat(answer).isEqualTo(72513)
         }
     }
 

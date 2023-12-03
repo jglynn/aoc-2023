@@ -2,24 +2,18 @@ package org.jglynn.aoc
 
 class Day02(private val input: List<String>) {
 
-    companion object {
-        const val MAX_RED = 12
-        const val MAX_GREEN = 13
-        const val MAX_BLUE = 14
-    }
-
     fun solvePart1(): Int {
-        val parsed = input.mapIndexed { index, row -> parseGames(index+1, row) }
-        val validGameSum = parsed
-            .filter { it.reds.max() <= MAX_RED && it.greens.max() <= MAX_GREEN && it.blues.max() <= MAX_BLUE }
+        val validGameSum = input
+            .mapIndexed { index, row -> parseGames(index+1, row) }
+            .filter { it.valid() }
             .sumOf { it.number };
-        println(validGameSum)
         return validGameSum
     }
 
     fun solvePart2(): Int {
-        println(input.size)
-        return input.size
+        return input
+            .mapIndexed { index, row -> parseGames(index+1, row) }
+            .sumOf { it.power() }
     }
 
     data class Game(var number: Int,
@@ -30,6 +24,13 @@ class Day02(private val input: List<String>) {
             greens.add(green)
             blues.add(blue)
             reds.add(red)
+        }
+        fun power(): Int = greens.max() * blues.max() * reds.max()
+        fun valid(): Boolean = reds.max() <= MAX_RED && greens.max() <= MAX_GREEN && blues.max() <= MAX_BLUE
+        companion object {
+            const val MAX_RED = 12
+            const val MAX_GREEN = 13
+            const val MAX_BLUE = 14
         }
     }
 
