@@ -5,10 +5,11 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [jglynn][github].
 ![build result](https://github.com/jglynn/aoc-2023/actions/workflows/gradle.yml/badge.svg)
 
 #### Challenges & Solutions
-| Day | Title                                                 | Links                                                                                                |
-|-----|-------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 1   | [Trebuchet](https://adventofcode.com/2023/day/1)      | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day01.kt) |
+| Day | Title                                   | Links                                                                                                |
+|-----|-----------------------------------------|------------------------------------------------------------------------------------------------------|
+| 1   | [Trebuchet](https://adventofcode.com/2023/day/1) | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day01.kt) |
 | 2   | [Cube Conundrum](https://adventofcode.com/2023/day/2) | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day02.kt) |
+| 4   | [Scratchcards](https://adventofcode.com/2023/day/4) | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day04.kt) |
 
 
 [^aoc]:
