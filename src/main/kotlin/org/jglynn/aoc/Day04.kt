@@ -29,16 +29,13 @@ class Day04(private val input: List<String>) {
         }
     }
 
-    private fun calculateScores(cards : List<String>) =
-        input.map { card ->
+    private fun calculateScores(cards : List<String>): List<Pair<Int,Int>> {
+        return cards.map { card ->
             val (numbers, winners) = parseCard(card)
             val matches = numbers.intersect(winners)
-            matches.size to when {
-                matches.size == 1 -> 1
-                matches.size > 1 -> 2.0.pow((matches.size - 1).toDouble()).toInt()
-                else -> 0
-            }
+            matches.size to 2.0.pow((matches.size - 1).toDouble()).toInt()
         }
+    }
 
     private fun parseCard(card : String): Pair<List<Int>,Set<Int>> {
         val (numbers, winners) = card.substringAfter(":").split("|")
