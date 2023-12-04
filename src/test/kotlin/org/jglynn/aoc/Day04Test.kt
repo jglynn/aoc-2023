@@ -43,6 +43,7 @@ class Day04Test {
 
             val answer = Day04(testData).solvePart2()
             println("Answer = $answer")
+            assertThat(answer).isEqualTo(30)
         }
 
         @Test
@@ -50,6 +51,7 @@ class Day04Test {
 
             val answer = Day04(realData).solvePart2()
             println("Answer = $answer")
+            assertThat(answer).isEqualTo(7185540)
 
         }
     }
