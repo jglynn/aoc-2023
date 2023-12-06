@@ -11,22 +11,14 @@ class Day04(private val input: List<String>) {
 
     fun solvePart2(): Int {
         val scores = calculateScores(input)
-        val games = mutableListOf<Int>()
-        repeat(scores.size) { index ->
-            pullCards(games, index, scores)
-        }
-        //println(games.groupingBy{it}.eachCount())
-        return games.size
-    }
-
-    private fun pullCards( acc : MutableList<Int>, game : Int, scores : List<Pair<Int,Int>>) {
-        acc.add(game)
-        val winners = scores[game].first
-        if (winners > 0) {
-            repeat (winners) { index ->
-                pullCards(acc,game + index + 1, scores)
+        val allMatches = scores.map { it.first }
+        val cards = IntArray(allMatches.size) { 1 }
+        allMatches.forEachIndexed { index, score ->
+            repeat(score) {
+                cards[index+it+1] += cards[index]
             }
         }
+        return cards.sum()
     }
 
     private fun calculateScores(cards : List<String>): List<Pair<Int,Int>> {
