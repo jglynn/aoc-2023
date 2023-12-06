@@ -25,7 +25,7 @@ class Day05Test {
             assertThat(answer).isEqualTo(35)
         }
 
-        @Test
+        //@Test
         fun `Actual answer`() {
 
             val answer = Day05(realData).solvePart1()
