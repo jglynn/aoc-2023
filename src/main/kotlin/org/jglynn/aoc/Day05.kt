@@ -1,7 +1,5 @@
 package org.jglynn.aoc
 
-import kotlin.math.pow
-
 class Day05(private val input: List<String>) {
 
     fun solvePart1(): Long {
