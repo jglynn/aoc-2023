@@ -18,20 +18,13 @@ class Day06Test {
     inner class Part1 {
         @Test
         fun `Matches example`() {
-
             val answer = Day06(testData).solvePart1()
-
-            // Assert
             assertThat(answer).isEqualTo(288)
         }
 
         @Test
         fun `Actual answer`() {
-
             val answer = Day06(realData).solvePart1()
-
-            // Assert
-            println("Answer = $answer")
             assertThat(answer).isEqualTo(140220)
         }
     }
@@ -39,20 +32,17 @@ class Day06Test {
     @Nested
     @DisplayName("Part 2")
     inner class Part2 {
-        //@Test
+        @Test
         fun `Matches example`() {
-
             val answer = Day06(testData).solvePart2()
-            println("Answer = $answer")
+            assertThat(answer).isEqualTo(71503)
         }
 
-        //@Test
+        @Test
         fun `Actual answer`() {
-
             val answer = Day06(realData).solvePart2()
-            println("Answer = $answer")
+            assertThat(answer).isEqualTo(39570185)
         }
     }
-
 
 }
