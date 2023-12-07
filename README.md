@@ -12,11 +12,11 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [jglynn][github].
 | 4   | [Scratchcards](https://adventofcode.com/2023/day/4)                    | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day04.kt) |
 | 5   | [If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day05.kt) |
 | 6   | [Wait For It](https://adventofcode.com/2023/day/6)                     | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day06.kt) |
-
+| 7   | [Camel Cards](https://adventofcode.com/2023/day/7)                     | [\[Solution\]](https://github.com/jglynn/aoc-2023/blob/main/src/main/kotlin/org/jglynn/aoc/Day07.kt) |
 
 [^aoc]:
     [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
-    Every year since then, beginning on the first day of December, a programming puzzle is published every day for twenty-four days.
+    Every year since then, beginning on the first day of 7cember, a programming puzzle is published every day for twenty-four days.
     You can solve the puzzle and provide an answer using the language of your choice.
 
 [aoc]: https://adventofcode.com
