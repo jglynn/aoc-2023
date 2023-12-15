@@ -35,13 +35,13 @@ class Day15Test {
         @Test
         fun `Matches example`() {
             val answer = Day15(testData).solvePart2()
-            println(answer)
+            assertThat(answer).isEqualTo(145)
         }
 
         @Test
         fun `Actual answer`() {
             val answer = Day15(realData).solvePart2()
-            println(answer)
+            assertThat(answer).isEqualTo(251_353)
         }
     }
 
