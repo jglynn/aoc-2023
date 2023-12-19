@@ -30,6 +30,9 @@ internal object Utils {
         }
     }
 
+    fun String.substringBetween(char1: String, char2: String): String =
+        this.substringAfter(char1).substringBefore(char2)
+
     fun String.toURI(): URI =
         Utils.javaClass.classLoader.getResource(this)?.toURI() ?: throw IllegalArgumentException("Cannot find Resource: $this")
  }

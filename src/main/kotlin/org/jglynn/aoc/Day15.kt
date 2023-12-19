@@ -12,7 +12,7 @@ class Day15(private val input: String) {
         }
 
     fun solvePart2(): Int {
-        val boxes = List(256){ mutableMapOf<String, Int>() }
+        val boxes = List(256){ linkedMapOf<String, Int>() }
 
         input.split(",").forEach {
             if (it.contains("-")) {
